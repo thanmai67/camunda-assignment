@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="task_assign" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.0.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.17.0">
+  <decision id="assigning_task" name="Assigning Task">
+    <decisionTable id="DecisionTable_1i3m0ge" hitPolicy="FIRST">
+      <input id="Input_1" label="Dialog Editing">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text>dialogEditing</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1igl2ne" label="Foley">
+        <inputExpression id="LiteralExpression_0pl9mgn" typeRef="boolean">
+          <text>foley</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yrzjk8" label="Music Editing">
+        <inputExpression id="LiteralExpression_1g4zwge" typeRef="boolean">
+          <text>musicEditing</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0t2zqtz" label="Voice Editing">
+        <inputExpression id="LiteralExpression_1kek38d" typeRef="boolean">
+          <text>voiceEditing</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1j8xgok" label="Mixing">
+        <inputExpression id="LiteralExpression_126o4tt" typeRef="boolean">
+          <text>mixing</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Assigned To" name="taskAssignedTo" typeRef="string" />
+      <rule id="DecisionRule_1ygldxx">
+        <inputEntry id="UnaryTests_11k1pmm">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lbmxb9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07zgmze">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z4c8b0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wv4ce3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18ioyk8">
+          <text>"User1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1i3fzic">
+        <inputEntry id="UnaryTests_0mw2uzg">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uflisl">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g5fmwd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w3052u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w1fzn7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10mgua8">
+          <text>"User2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09j0j6k">
+        <inputEntry id="UnaryTests_02x2rfd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hvf5b7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fbte51">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11wxpf1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m1chgx">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14lrbqg">
+          <text>"User3"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mcdzfa">
+        <inputEntry id="UnaryTests_1d8wfb0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w804gn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gzhp0b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1iei8ob">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15897rg">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00tb9bm">
+          <text>"User4"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nfbago">
+        <inputEntry id="UnaryTests_08r3rv9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_196fm6t">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mdjfmt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0exz58w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b1wwff">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00j4jcd">
+          <text>"User5"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0epq92v">
+        <inputEntry id="UnaryTests_1khfc7r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ukj3cl">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zqlida">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ja3nv1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09kypv2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19gt9jc">
+          <text>"User6"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="assigning_task">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

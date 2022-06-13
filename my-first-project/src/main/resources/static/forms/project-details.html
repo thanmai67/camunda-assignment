@@ -1,0 +1,37 @@
+<form class="form-horizontal">
+    <div class="form-group">
+
+        <label class="control-label col-md-4">Agent Name </label>
+        <div class="col-md-8">
+            <input type="text" cam-variable-name="agentName"
+                   cam-variable-type="String" required class="form-control" />
+        </div>
+
+        <label class="control-label col-md-4">Company Name </label>
+        <div class="col-md-8">
+            <input type="text" cam-variable-name="companyName"
+                   cam-variable-type="String" required class="form-control" />
+        </div>
+
+        <label class="control-label col-md-4">Project Name </label>
+        <div class="col-md-8">
+            <input type="text" cam-variable-name="projectName"
+                   cam-variable-type="String" required class="form-control" />
+        </div>
+
+
+        <label class="control-label col-md-4">Project Type </label>
+        <div class="col-md-8">
+        <select id="projectType" required cam-variable-name="projectType" cam-variable-type="String">
+            <option value="localization" >Localization </option>
+            <option value="audioPostProduction" checked>Audio Post Production</option>
+        </select>
+       </div>
+
+
+    </div>
+
+    <script cam-script type="text/form-script">
+    // custom JavaScript goes here
+  </script>
+</form>
